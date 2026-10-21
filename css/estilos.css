@@ -60,3 +60,17 @@ width: 100px;
   width: 100px;
   height: 100px;
 }
+
+.azul{
+  background-color: aqua;
+}
+.morado{
+  background-color: darkorchid;
+}
+.violeta{
+  background-color: violet;
+}
+#tabla{
+  text-align: center;
+  margin: 0 auto;
+}

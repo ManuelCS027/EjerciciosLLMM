@@ -1,0 +1,20 @@
+table{
+    border: 0px;
+    margin: auto;
+    border-spacing: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+}
+.azul{
+    background-color: blue;
+}
+.amarillo{
+    background-color: yellow;
+}
+rojo{
+    background-color: red;
+}
+.blanco{
+    background-color: white;
+}
