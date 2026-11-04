@@ -1,110 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea2_2</title>
-    <h1>INDUSTRIAS EXTREMEÑAS S.A.</h1>
-    <style>
-        td{
-            padding: 20px;
-        }
-    </style>
+    <title>Industrias Extremeñas S.A.</title>
 </head>
 <body>
-      <form action="manejador.html" enctype="multipart/form-data" method="post" name="formtipos" id="formulario">
+
+    <h1>INDUSTRIAS EXTREMEÑAS S.A.</h1>
+
+    <form>
         <fieldset>
             <legend>FORMULARIO DE PEDIDO</legend>
-            <p><strong>>Paso 1. Identificación</strong></p>
-            <table>
-            <tr>
-                <td>
-                    <fieldset>
-                        <legend>Datos del cliente</legend>
-                        <p>Correo electrónico
-                        <label for="email">
-                            <input 
-                            type="email"
-                            name="correo"
-                            id="correo"
-                            value="ejemplo@correo.com"
-                            form="formulario"
-                            >
-                        </label>
-                        </p>
-                        <p>Contraseña
-                            <label for="password">
-                                <input 
-                                type="password"
-                                name="contraseña"
-                                id="contraseña"
-                                value=""
-                                form="formulario"
-                                >
-                            </label>
-                            <br>(Longitud mínima 6 caracteres)
-                        </p>
-                    </fieldset>
-                </td>
-                <td>
-                    <fieldset>
-                        <legend>Tipo de cliente</legend>
-                        <p>
-                            <label for="particular">
-                                <input 
-                                type="radio" 
-                                name="particular" 
-                                id="particular"
-                                value="si"
-                                form="formulario"
-                                >Particular
-                            </label>
-                        </p>
-                        <p>
-                            <label for="asociacion">
-                                <input 
-                                type="radio" 
-                                name="asociacion" 
-                                id="asociacion"
-                                value="si"
-                                form="formulario"
-                                >Asociación
-                            </label>
-                        </p>
-                        <p>
-                            <label for="empresa">
-                                <input 
-                                type="radio" 
-                                name="empresa" 
-                                id="empresa"
-                                value="si"
-                                form="formulario"
-                                >Empresa
-                            </label></p>
-                    </fieldset>
-                </td>
-            </tr>
-            </table>
-            <p><strong>>Paso 2. Pedido</strong></p>
-            <table>
+
+
+            <p><b>&gt; Paso 1. Identificación</b></p>
+            <table border="0" width="100%" cellpadding="5">
                 <tr>
-                    <td>
+                    <td valign="top" width="60%">
                         <fieldset>
-                            <legend>Datos del Producto</legend>
+                            <legend>Datos del Cliente</legend>
                             <p>
-                             <label for="producto">Producto</label>
+                                Correo Electrónico <input type="email" name="email" size="30"><br><br>
+                                Contraseña <input type="password" name="contrasena" size="15"><br>
+                                <small>(Longitud mínima 6 caracteres)</small>
                             </p>
-                            <p><select name="selproducto" id="producto">
-                                <optgroup label="armaduras">
-                                    <option value=""></option>
-                                </optgroup>
-                            </select></p>
+                        </fieldset>
+                    </td>
+                    <td valign="top" width="40%">
+                        <fieldset>
+                            <legend>Tipo de Cliente</legend>
+                            <p>
+                                <input type="radio" name="tipo_cliente" value="particular" checked> Particular<br>
+                                <input type="radio" name="tipo_cliente" value="asociacion"> Asociación<br>
+                                <input type="radio" name="tipo_cliente" value="empresa"> Empresa
+                            </p>
                         </fieldset>
                     </td>
                 </tr>
             </table>
+
+            <br>
+
+
+            <p><b>&gt; Paso 2. Pedido</b></p>
+            <table border="0" width="100%" cellpadding="5">
+                <tr>
+                    <td valign="top" width="35%">
+                        <fieldset>
+                            <legend>Datos del Producto</legend>
+                            <label>Producto</label><br>
+                            <select size="8" name="producto">
+                                <optgroup label="Armaduras">
+                                    <option value="AR001" selected>AR001 Oro Reluciente</option>
+                                    <option value="AR002">AR002 Plata Pulida</option>
+                                    <option value="AR003">AR003 Bronce Reforzado</option>
+                                </optgroup>
+                                <optgroup label="Extras">
+                                    <option value="EX001">EX001 Escudo</option>
+                                    <option value="EX002">EX002 Invisibilidad</option>
+                                </optgroup>
+                            </select>
+                        </fieldset>
+                    </td>
+                    <td valign="top" width="65%">
+                        <fieldset>
+                            <legend>Información de interés</legend>
+                            <label>Comentarios</label><br>
+                            <textarea name="comentarios" rows="5" cols="60">Escriba aquí sus comentarios</textarea>
+                            <p>
+                                <input type="checkbox" name="publicidad" checked> Acepto recibir información publicitaria
+                            </p>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+
+            <table border="0" width="100%" cellpadding="5">
+                <tr>
+                    <td valign="top" width="50%">
+                        <fieldset>
+                            <legend>Datos de Envío</legend>
+                            <p>Dirección <input type="text" name="direccion" size="45"></p>
+                            <p>
+                                Ciudad <input type="text" name="ciudad" size="25"> <br>
+                                Código Postal <input type="text" name="cp" size="8">
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td valign="top" width="50%">
+                        <fieldset>
+                            <legend>Datos Bancarios</legend>
+                            <p>Nombre de la Entidad <br> <input type="text" name="entidad" size="30"></p>
+                            <p>Nº de cuenta <input type="text" name="cuenta" size="30"></p>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <table border="0" width="100%">
+                <tr>
+                    <td align="left" width="50%">
+                        <button type="submit">
+                            <img src="imagenes/enviar.png" alt="Enviar">
+                        </button>
+                    </td>
+                    <td align="center" width="50%">
+                        <button type="reset">
+                            <img src="imagenes/reiniciar.png" alt="Reset">
+                        </button>
+                    </td>
+                </tr>
+            </table>
+
         </fieldset>
-      </form>
-    
+    </form>
+
 </body>
 </html>
