@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Formulario</title>
+  </head>
+  <body>
+    <form action="manejador.html" enctype="multipart/form-data" method="post" name="formtipos" id="formulario">
+    <table style="width: 100%; border-collapse: collapse; border-style: double; border-color: black; border-width: 3px; width: 100%;">
+      <tr>
+        
+        <td style="vertical-align: top; width: 50%;">
+          <table style="align-items: center; text-align: center; margin: auto; padding: auto;">
+            <tr>
+              <td>
+                <label for="Nombre">Nombre:
+                  <input 
+                    type="text" 
+                    name="Nombre" 
+                    id="Nombre" 
+                    value="Nombre" 
+                    form="formulario"
+                  >
+                </label>
+              </td>
+            </tr>    
+            <tr>
+              <td>
+                <p><strong>Edades</strong></p>
+                <p>
+                  <label for="menos20">
+                    <input
+                      type="radio"
+                      name="edad"
+                      id="menos20"
+                      value="menos20" 
+                      form="formulario"
+                    >Menos de 20 años
+                  </label>
+                </p>
+                <p>
+                  <label for="20a24">
+                    <input
+                      type="radio"
+                      name="edad"
+                      id="20a24"
+                      value="20a24" 
+                      form="formulario"
+                    >20-24 años
+                  </label>
+                </p>
+                <p>
+                  <label for="24a30">
+                    <input
+                      type="radio"
+                      name="edad"
+                      id="24a30"
+                      value="24a30" 
+                      form="formulario"
+                    >24-30 años
+                  </label>
+                </p>
+                <p>
+                  <label for="30a50">
+                    <input
+                      type="radio"
+                      name="edad"
+                      id="30a50"
+                      value="30a50" 
+                      form="formulario"
+                    >30-50 años
+                  </label>
+                </p>
+                <p>
+                  <label for="mas50">
+                    <input
+                      type="radio"
+                      name="edad"
+                      id="mas50"
+                      value="mas50" 
+                      form="formulario"
+                    >Más de 50 años
+                  </label>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><h3>Introduce la fecha:</h3></p>
+                <p>
+                  <label for="fecha">
+                    <input 
+                      type="date"
+                      name="fecha" 
+                      id="fecha"
+                      value="2026-01-01"
+                    >
+                  </label>
+                </p>
+              </td>
+            </tr>
+             <tr>
+            <td>
+                <p><strong>Rango de Valores</strong></p>
+                <p>
+                    <label for="rango">
+                        <input 
+                        type="range" 
+                        name="rango" 
+                        id="rango" 
+                        value="50"
+                        min="0"
+                        max="100"
+                        step="10"
+                        >
+                    </label>
+                </p>
+              </td>
+          </tr>
+          <tr>
+            <td>
+                <input 
+                type="submit" 
+                name="enviar" 
+                id="boton1" 
+                value="Enviar"
+                form="formulario"
+                >
+            </td>
+          </tr>
+          </table>
+        </td>
+
+        <td style="vertical-align: top; width: 50%;">
+          <table style="align-items: center; text-align: center; margin: auto; padding: auto;">
+            <tr>
+              <td>
+                <p><strong>Aficiones:</strong></p>
+                <p>
+                  <label for="andarin">
+                    <input
+                      type="checkbox"
+                      name="andar"
+                      id="andarin"
+                      value="si"
+                      form="formulario"
+                    >Senderismo
+                  </label>
+                </p>
+                <p>
+                  <label for="lector">
+                    <input
+                      type="checkbox"
+                      name="leer"
+                      id="lector"
+                      value="si"
+                      form="formulario"
+                    >Lectura
+                  </label>
+                </p>
+                <p>
+                  <label for="turista">
+                    <input
+                      type="checkbox"
+                      name="turismo"
+                      id="turista"
+                      value="si"
+                      form="formulario"
+                    >Turismo
+                  </label>
+                </p>
+                <p>
+                  <label for="cinefilo">
+                    <input
+                      type="checkbox"
+                      name="cine"
+                      id="cinefilo"
+                      value="si"
+                      form="formulario"
+                    >Cine
+                  </label>
+                </p>
+                <p>
+                  <label for="fotografia">
+                    <input
+                      type="checkbox"
+                      name="fotografia"
+                      id="fotografo"
+                      value="si"
+                      form="formulario"
+                    >Fotografia
+                  </label>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><h3>Introduce el color:</h3></p>
+                <p>
+                  <label for="color">
+                    <input 
+                      type="color"
+                      name="color" 
+                      id="color"
+                      value="#000000"
+                    >
+                  </label>
+                </p>
+              </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><strong>Inserta un archivo:</strong></p>
+                    <p>
+                        <label for="file">
+                            <input 
+                            type="file" 
+                            name="fichero" 
+                            id="file" 
+                            accept=".doc, .pdf, .docx, .odt, .txt"
+                            >
+                        </label>
+                    </p>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+                    <input 
+                    type="reset" 
+                    name="reiniciar" 
+                    id="boton2" 
+                    value="Reiniciar" 
+                    form="formulario"
+                    >
+                </td>
+            </tr>
+        </table>
+        </td>
+
+      </tr>
+    </table>
+    </form>
+  </body>
+</html>
