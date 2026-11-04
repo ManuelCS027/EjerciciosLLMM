@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea2_2</title>
+    <h1>INDUSTRIAS EXTREMEÑAS S.A.</h1>
+    <style>
+        td{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+      <form action="manejador.html" enctype="multipart/form-data" method="post" name="formtipos" id="formulario">
+        <fieldset>
+            <legend>FORMULARIO DE PEDIDO</legend>
+            <p><strong>>Paso 1. Identificación</strong></p>
+            <table>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos del cliente</legend>
+                        <p>Correo electrónico
+                        <label for="email">
+                            <input 
+                            type="email"
+                            name="correo"
+                            id="correo"
+                            value="ejemplo@correo.com"
+                            form="formulario"
+                            >
+                        </label>
+                        </p>
+                        <p>Contraseña
+                            <label for="password">
+                                <input 
+                                type="password"
+                                name="contraseña"
+                                id="contraseña"
+                                value=""
+                                form="formulario"
+                                >
+                            </label>
+                            <br>(Longitud mínima 6 caracteres)
+                        </p>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Tipo de cliente</legend>
+                        <p>
+                            <label for="particular">
+                                <input 
+                                type="radio" 
+                                name="particular" 
+                                id="particular"
+                                value="si"
+                                form="formulario"
+                                >Particular
+                            </label>
+                        </p>
+                        <p>
+                            <label for="asociacion">
+                                <input 
+                                type="radio" 
+                                name="asociacion" 
+                                id="asociacion"
+                                value="si"
+                                form="formulario"
+                                >Asociación
+                            </label>
+                        </p>
+                        <p>
+                            <label for="empresa">
+                                <input 
+                                type="radio" 
+                                name="empresa" 
+                                id="empresa"
+                                value="si"
+                                form="formulario"
+                                >Empresa
+                            </label></p>
+                    </fieldset>
+                </td>
+            </tr>
+            </table>
+            <p><strong>>Paso 2. Pedido</strong></p>
+            <table>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Datos del Producto</legend>
+                            <p>
+                             <label for="producto">Producto</label>
+                            </p>
+                            <p><select name="selproducto" id="producto">
+                                <optgroup label="armaduras">
+                                    <option value=""></option>
+                                </optgroup>
+                            </select></p>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+      </form>
+    
+</body>
+</html>
