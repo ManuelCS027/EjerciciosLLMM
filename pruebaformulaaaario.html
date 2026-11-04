@@ -120,6 +120,33 @@
           </tr>
           <tr>
             <td>
+              <label for="micajatexto"><strong>Escribe texto</strong></label>
+              <br>
+              <textarea name="cajatexto" id="micajatexto" rows="5" cols="20"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <fieldset>
+                <legend>Concesionarios</legend>
+                <p><label for="coches"><strong>Selecciona un coche</strong></label></p>
+                <p><select name="selcoches" id="coches">
+                  <optgroup label="berlinas">
+                    <option value="1">Volvo</option>
+                    <option value="2">Mercedes</option>
+                    <option value="3">Audi</option>
+                  </optgroup>
+                  <optgroup label="suvs">
+                    <option value="4">Toyota</option>
+                    <option value="5">Renoult</option>
+                    <option value="6">Mazda</option>
+                  </optgroup>
+                </select></p>
+              </fieldset>
+            </td>
+          </tr>
+          <tr>
+            <td>
                 <input 
                 type="submit" 
                 name="enviar" 
@@ -226,7 +253,19 @@
             </tr>
             <br>
             <tr>
+              <td>
+                <label for="pais"><strong>Elige tu país</strong></label>
+                <br><br>
+                <select name="pais" id="paises">
+                  <option value="es">España</option>
+                  <option value="pt">Portugal</option>
+                  <option value="fr">Francia</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
                 <td>
+                  <br><br><br><br>
                     <input 
                     type="reset" 
                     name="reiniciar" 
