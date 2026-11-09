@@ -20,8 +20,8 @@
                         <fieldset>
                             <legend>Datos del Cliente</legend>
                             <p>
-                                Correo Electrónico <input type="email" name="email" size="30"><br><br>
-                                Contraseña <input type="password" name="contrasena" size="15"><br>
+                                Correo Electrónico <input type="email" name="email" ><br><br>
+                                Contraseña <input type="password" name="contrasena" ><br>
                                 <small>(Longitud mínima 6 caracteres)</small>
                             </p>
                         </fieldset>
@@ -30,7 +30,7 @@
                         <fieldset>
                             <legend>Tipo de Cliente</legend>
                             <p>
-                                <input type="radio" name="tipo_cliente" value="particular" checked> Particular<br>
+                                <input type="radio" name="tipo_cliente" value="particular"> Particular<br>
                                 <input type="radio" name="tipo_cliente" value="asociacion"> Asociación<br>
                                 <input type="radio" name="tipo_cliente" value="empresa"> Empresa
                             </p>
@@ -42,7 +42,7 @@
             <br>
 
 
-            <p><b>&gt; Paso 2. Pedido</b></p>
+            <p><b> Paso 2. Pedido</b></p>
             <table border="0" width="100%" cellpadding="5">
                 <tr>
                     <td valign="top" width="35%">
@@ -51,7 +51,7 @@
                             <label>Producto</label><br>
                             <select size="8" name="producto">
                                 <optgroup label="Armaduras">
-                                    <option value="AR001" selected>AR001 Oro Reluciente</option>
+                                    <option value="AR001">AR001 Oro Reluciente</option>
                                     <option value="AR002">AR002 Plata Pulida</option>
                                     <option value="AR003">AR003 Bronce Reforzado</option>
                                 </optgroup>
@@ -68,7 +68,7 @@
                             <label>Comentarios</label><br>
                             <textarea name="comentarios" rows="5" cols="60">Escriba aquí sus comentarios</textarea>
                             <p>
-                                <input type="checkbox" name="publicidad" checked> Acepto recibir información publicitaria
+                                <input type="checkbox" name="publicidad"> Acepto recibir información publicitaria
                             </p>
                         </fieldset>
                     </td>
