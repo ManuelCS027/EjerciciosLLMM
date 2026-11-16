@@ -1,0 +1,49 @@
+!DOCTYPE html>
+<html lang="es">
+  <div id="todo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <img id="logo" src="imagenes/logo.png" alt="imagen">
+  <div id="cabecera">
+  <title>IES Augustóbriga</title>
+  <meta name="Description" content="Página Web IES Augustóbriga">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header id="Inicio"><h1>IES Augustóbriga</h1></header>
+  <nav><a href="#Inicio">Inicio |</a> <a href="#Noticias">Noticias |</a> <a href="#Actividades">Actividades |</a> <a href="#Contacto">Contacto |</a> <a href="https://www.educarex.es/fp.html" target="_blank" title="Portal Educación">Estudia</a></nav>
+<main>
+
+    <section id="Contacto">
+        <form action="procesar.php" method="post">
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre">
+
+                <label for="email">Correo:</label>
+                <input type="email" name="email" id="email">
+
+                <label for="tel">Teléfono:</label>
+                <input type="tel" name="tel" id="tel">
+
+                <label for="fecha">Fecha de visita:</label>
+                <input type="date" name="fecha" id="fecha">
+
+                <label for="motivo">Motivo:</label>
+                <select name="motivo" id="motivo">
+                    <option value="info">Información</option>
+                    <option value="matricula">Matrícula</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <Textarea cols="40" rows="4"></Textarea>
+                
+            <button type="submit">Enviar</button>
+            <button type="reset">Reiniciar</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
